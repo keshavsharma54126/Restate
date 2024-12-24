@@ -17,8 +17,9 @@ export default function RootLayout() {
   useEffect(() => {
     if (fontError) {
       console.error('Font loading error:', fontError);
+      SplashScreen.hideAsync()
     }
-  }, [fontError]);
+  }, [fontsLoaded]);
 
   // Keep splash screen visible while fonts are loading
   if (!fontsLoaded) {
