@@ -5,6 +5,12 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#23f3223",
+      "hideTransition": true
+    },
     "scheme": "restate",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,7 +19,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       }
     },
@@ -27,11 +33,25 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "image": "./assets/images/splash.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#000000",
+          "hideTransition": true
+
         }
+      ],
+      [
+        "expo-font",
+      {
+        "fonts":[
+          "./assets/fonts/Rubik-Bolt.ttf",
+          "./assets/fonts/Rubik-ExtraBold.ttf",
+          "./assets/fonts/Rubik-Light.ttf",
+          "./assets/fonts/Rubik-Medium.ttf",
+          "./assets/fonts/Rubik-Regular.ttf",
+          "./assets/fonts/Rubik-SemiBold.ttf"
+        ]
+      }
       ]
     ],
     "experiments": {
